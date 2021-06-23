@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>IPR Project</title>
+    <link  rel="stylesheet" href="./../public/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  </head>
+
+  <body>
+    
+    <!--home page & sidebar-->
+  
+      <div class="hero">
+
+        <div id="sidebar">
+          <% include ../partials/nav %>
+        </div>
+
+        <div id="menubtn">
+          <img src="menu.png" id="menu" style="width: 50px; height: 50px;" >
+        </div>
+
+        <script>
+          var menubtn = document.getElementById("menubtn")
+          var sidebar = document.getElementById("sidebar")
+          var menu = document.getElementById("menu")
+          menubtn.onclick = function() {
+            if(sidebar.style.right == "-250px") {
+              sidebar.style.right = "0";
+            }
+            else {
+              sidebar.style.right = "-250px"
+            }
+          }
+        </script>
+
+        <nav>
+          <div class="logo">
+            <img src="logo.png" alt="logo" style="width: 60px; height: 60px;" >
+          </div>
+        </nav>
+
+      
+        
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <img src="/public/pic0.jpeg" style="width:89.5%">
+            <div class="text">WELCOME</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="/public/pic1.jpeg" style="width:93.25%">
+            <div class="text">FIND THE BEST RECIPES</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="/public/pic2.jpeg" style="width:89.75%">
+            <div class="text">SEARCH THROUGH BOOKS</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="/public/pic3.jpeg" style="width:89.75%">
+            <div class="text">EAT & FEEL GOOD</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+          }
+          </script>
+          </body>
+          </html> 
+
+
+        </div>
+      </div>
+  </body>
+</html>

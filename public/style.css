@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: #dae4ff;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+nav{
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  flex: 1;
+}
+.logo img{
+  width: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+  cursor: pointer;
+}
+#bannerBtn {
+  padding: 15px 40px;
+  border: 0;
+  outline: none;
+  border-radius: 25px;
+  color: black;
+  font-size: 14px;
+  margin: 30px;
+}
+button li a{
+    color: black;
+    text-decoration: none;
+  }
+.row{
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.col-1, .col-2 {
+  flex-basis: 50%;
+  overflow: hidden;
+}
+.col-1 {
+  padding: 5% 5%;
+}
+.col-1 h1{
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  color: #333;
+  font-family:'Kaushan Script', cursive;
+}
+.col-1 p{
+  color: #777;
+  line-height: 22px;
+  margin: 20px 0 30;
+}
+.col-2 img{
+  width: 100%;
+}
+
+/*--sidebar2--*/
+#sidebar {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background: lightgray;
+  z-index: 2;
+}
+nav ul li {
+  list-style: none;
+  margin: 20px 20px;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: palevioletred;
+}
+.menu-1 ul li a {
+  color: black;
+}
+#menubtn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+#menubtn img{
+  width: 20px;
+  margin-top: 15px;
+}
+
+/*--by book--*/
+#byBook {
+    width: 100%;
+    padding: 70px 0;
+    background: lightsteelblue;
+}
+.book-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.book-text p {
+    margin: auto;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.book-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.books{
+    flex-basis: 50%;
+}
+.books h1 {
+    font-size: 20px;
+    font-family:'Kaushan Script', cursive;
+}
+.book-btn {
+    margin: 20px auto 0;
+}
+.CakeBook-btn a {
+    width: 130px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: black;
+    border: .5px solid pink;
+}
+.book-btn input{
+    width: 130px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: black;
+    border: .5px solid pink;
+}
+.addBook-box {
+    width: 10%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.addBooks{
+    flex-basis: 20%;
+}
+.addBook-btn {
+    margin: 0px auto 0;
+}
+.addBook-btn a {
+    width: 100px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: black;
+    border: 2px solid palevioletred;
+    font-family:'Kaushan Script', cursive;
+}
+
+
+
+/*--ScriptRecipe--*/
+
+.default {
+  display: flex;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: black;
+  flex-wrap: wrap;
+  border: .5px solid palevioletred
+}
+
+.default:hover {
+  background: solid pink;
+}
+
+
+/*footer*/
+#foot{
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+
+/*--manage Recipes--*/
+#manage{
+    width: 100%;
+    padding: 70px 0;
+    background: lightsteelblue;
+}
+.manage-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.manage-text p {
+    margin: auto;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.manage-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.manageRecipes{
+    flex-basis: 100%;
+}
+.manage-btn {
+    margin: 20px auto 0;
+}
+.manage-btn a {
+    width: 130px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: black;
+    border: .5px solid palevioletred;
+}
+
+
+
+/*login*/
+  
+.center{
+  width: 500px;
+  background: gray;
+  margin: -3% auto;
+  padding: 10px 0;
+  color: white;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.form-element {
+  margin: 31px auto;
+  width: 80%;
+  border-bottom: 1px solid white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.form-element input[type="text"],
+.form-element input[type="password"] {
+  width: 90%;
+  border: none;
+  padding: 10px;
+  outline:none;
+  background: transparent;
+  color: white;
+}
+.form-element label {
+  font-size: 14px;
+  color: white;
+}
+.login-btn {
+  margin: 40px auto 20px;
+  width: 80%;
+  display: block;
+  outline: none;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+
+}
+
+
+
+
+
+
+/*SLIDER----------------------------------------------------------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1450px;
+  position: center;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: center;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color: grey;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4.5s;
+  animation-name: fade;
+  animation-duration: 4.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  .text {font-size: 11px}
+}

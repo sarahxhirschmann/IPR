@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+    <script src="./../public/scriptRecipe.js"></script>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="hero">
+    
+        <nav>
+          <div class="logo">
+            <img src="logo.png" alt="logo" href="./index" style="width: 60px; height: 60px;" >
+          </div>
+        </nav>
+<main>
+        <div id="sidebar">
+           <nav>
+             <ul>
+              <li><a href="./index"><h5>HOME</h5></a></li>
+             </ul>
+           </nav>
+         </div>
+</main>
+         <div id="menubtn">
+           <img src="menu.png" id="menu" style="width: 50px; height: 50px;" >
+         </div>
+
+
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidebar = document.getElementById("sidebar")
+            var menu = document.getElementById("menu")
+            menubtn.onclick = function() {
+              if(sidebar.style.right == "-250px") {
+                sidebar.style.right = "0";
+              }
+              else {
+                sidebar.style.right = "-250px"
+              }
+            }
+          </script>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-8">
+                <h1 class="hft-sb-title display-5">View All Recipes</h1>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+
+        <div id="showTitle">
+          <!--Hier werden die Rezepte über die script.js angezeigt-->
+      </div>
+      <p></p>
+      <p></p>
+      <p></p>
+        <div id="showText">
+            <!--Hier werden die Rezepte über die script.js angezeigt-->
+        </div>
+
+
+
+
+        <style>
+            .row {
+                background: #dae4ff;
+            }
+        </style>
+        <style>
+            .tabbox {
+                width: 200px;
+            }
+        </style>
+        <style>
+            .label {
+                display: block;
+                width: 200px;
+                color: palevioletred;
+            }
+        </style>
+        <style>
+            .container h1 {
+                color: palevioletred;
+            }
+        </style>
+        <!--vertical-align: middle-->
+
+    </div>
+    </div>
+
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+
+</html>

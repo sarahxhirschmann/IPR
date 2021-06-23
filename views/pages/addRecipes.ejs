@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+    <script src="./../public/script.js"></script>
+</head>
+
+<body>
+    <!--navbar-->
+    <div class="hero">
+    
+        <nav>
+          <div class="logo">
+            <img src="logo.png" href="./index" alt="logo" style="width: 60px; height: 60px;" >
+          </div>
+        </nav>
+
+        <div id="sidebar">
+           <nav>
+             <ul>
+                <li><a href="./index"><h5>HOME</h5></a></li>
+             </ul>
+           </nav>
+         </div>
+ 
+         <div id="menubtn">
+           <img src="menu.png" id="menu" style="width: 50px; height: 50px;" >
+         </div>
+
+
+         <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidebar = document.getElementById("sidebar")
+            var menu = document.getElementById("menu")
+            menubtn.onclick = function() {
+              if(sidebar.style.right == "-250px") {
+                sidebar.style.right = "0";
+              }
+              else {
+                sidebar.style.right = "-250px"
+              }
+            }
+          </script>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-8">
+                <h1 class="hft-sb-title display-5">Add Recipes</h1>
+            </div>
+        </div>
+        
+        <style>
+            .row {
+                background: #dae4ff;
+            }
+        </style>
+        <style>
+            .tabbox {
+                width: 200px;
+            }
+        </style>
+        <style>
+            .label {
+                display: block;
+                width: 200px;
+                color: palevioletred;
+            }
+        </style>
+        <style>
+            .container h1 {
+                color: palevioletred;
+            }
+        </style>
+        <!--vertical-align: middle-->
+
+
+        <div style="width: 600px; margin: auto">
+            <div class=".col-xs-12 .col-md-8">
+                <form id="recipes-form" method="push">
+                    <div class="form-group">
+                        <label for="title-input" class="label">Title</label>
+                        <input type="text" name="title" class="form-control" id="title-input" placeholder="My new Recipe">
+                    </div>
+                    <div class="form-group">
+                        <label for="incredients-input" class="label">Incredients</label>
+                        <textarea type="text" name="incredients" class="form-control" id="incredients-input" rows="4" placeholder="Please enter incredients"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="prep-input" class="label">Preparation</label>
+                        <textarea type="text" name="prep" class="form-control" id="prep-input" rows="10" placeholder="Please enter description for preparation"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="book" class="label">Select Book</label>
+                        <form id="book">
+                            <input type="checkbox" id="mixed">
+                            <label for="mixed">Mixed Recipes</label><br>
+                            <input type="checkbox" id="vegetarian">
+                            <label for="vegetarian">Veggie Book</label><br>
+                            <input type="checkbox" id="sweets">
+                            <label for="sweets">Cakes and Sweets</label><br>
+                        </form>
+                    </div>
+                    <button id="recipe-submit" type="submit" class="btn btn-primary" onclick="insertData()" action="./addRecipes.ejs">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+
+</html>
